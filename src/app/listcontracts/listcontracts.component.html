@@ -1,0 +1,171 @@
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html"><img src="../../assets/assets/img/logo.png" width="40" /></a>
+    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
+            class="fas fa-bars"></i></button>
+    <!-- Navbar Search-->
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="Search for..." aria-label="Search"
+                aria-describedby="basic-addon2" />
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </form>
+    <!-- Navbar-->
+    <ul class="navbar-nav ml-auto ml-md-0">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">Settings</a>
+                <a class="dropdown-item" href="#">Activity Log</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html">Logout</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+            <div class="sb-sidenav-menu">
+                <div class="nav">
+                    <div class="sb-sidenav-menu-heading">Core</div>
+                    <a class="nav-link" routerLink="/home">
+                        <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        Dashboard
+                    </a>
+                    <div class="sb-sidenav-menu-heading">Contract(s)</div>
+                    <a class="nav-link collapsed" routerLink="/listcontracts" data-toggle="collapse"
+                        data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                        List Contract(s)
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <a class="nav-link collapsed" routerLink="/contract" data-toggle="collapse"
+                        data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                        Add New Contract
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                </div>
+            </div>
+            <div class="sb-sidenav-footer">
+                <div class="small">Logged in as:</div>
+                Start Bootstrap
+            </div>
+        </nav>
+    </div>
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid">
+                <h1 class="mt-4">List contract(s)</h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+                    <li class="breadcrumb-item active">List contract</li>
+                </ol>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0"
+                            role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                            <thead>
+                                <tr role="row">
+                                    <th rowspan="1" colspan="1">#</th>
+                                    <th rowspan="1" colspan="1">Reference</th>
+                                    <th rowspan="1" colspan="1">Duration</th>
+                                    <th rowspan="1" colspan="1">Annual Rent</th>
+                                    <th rowspan="1" colspan="1">Month</th>
+                                    <th rowspan="1" colspan="1">Actions</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th rowspan="1" colspan="1">#</th>
+                                    <th rowspan="1" colspan="1">Reference</th>
+                                    <th rowspan="1" colspan="1">Duration</th>
+                                    <th rowspan="1" colspan="1">Annual Rent</th>
+                                    <th rowspan="1" colspan="1">Month</th>
+                                    <th rowspan="1" colspan="1">Actions</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+
+
+                                <tr role="row" class="odd">
+                                    <td class="sorting_1">12559649</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td>2008/11/28</td>
+                                    <td>
+                                        <a class="btn btn-sm btn-primary" routerLink="/editcontract">EDIT</a>
+                                    </td>
+                                </tr>
+                                
+                                <tr role="row" class="odd">
+                                    <td class="sorting_1">12559649</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td>2008/11/28</td>
+                                    <td>
+                                        <a class="btn btn-sm btn-primary" routerLink="/editcontract">EDIT</a>
+                                    </td>
+                                </tr>
+                                
+                                <tr role="row" class="odd">
+                                    <td class="sorting_1">12559649</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td>2008/11/28</td>
+                                    <td>
+                                        <a class="btn btn-sm btn-primary" routerLink="/editcontract">EDIT</a>
+                                    </td>
+                                </tr>
+                                
+                                <tr role="row" class="odd">
+                                    <td class="sorting_1">12559649</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td>2008/11/28</td>
+                                    <td>
+                                        <a class="btn btn-sm btn-primary" routerLink="/editcontract">EDIT</a>
+                                    </td>
+                                </tr>
+                                
+                                <tr role="row" class="odd">
+                                    <td class="sorting_1">12559649</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>33</td>
+                                    <td>2008/11/28</td>
+                                    <td>
+                                        <a class="btn btn-sm btn-primary" routerLink="/editcontract">EDIT</a>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Your Website 2020</div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                        &middot;
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
